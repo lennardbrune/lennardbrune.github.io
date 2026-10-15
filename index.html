@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lennard Brune</title>
+  <meta name="description" content="Lennard Brune – business student at Zeppelin University with a focus on processes, data and automation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@900&family=Inter:wght@400;500;600;700;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward,check,event,lock&display=block">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="hero">
+    <p class="hero-name">Lennard Brune</p>
+    <!-- Eigene Figur: Kopf mit Wollmütze. Die Augen (.eye) folgen dem Mauszeiger (main.js)
+         und blinzeln ab und zu (style.css). Klick öffnet den Chat (chat.js). -->
+    <button type="button" class="hero-mark" aria-label="Chat with my tiny assistant">
+      <svg class="face" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none"
+        stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="50" cy="13" r="5.5" fill="currentColor" stroke="none" />
+        <path d="M27 37 A23 21 0 0 1 73 37" />
+        <rect x="21" y="37" width="58" height="11" rx="5.5" />
+        <path d="M25 48 V62 A25 25 0 0 0 75 62 V48" />
+        <g class="eye"><rect x="37" y="53" width="7" height="13" rx="3.5" fill="currentColor" stroke="none" /></g>
+        <g class="eye"><rect x="56" y="53" width="7" height="13" rx="3.5" fill="currentColor" stroke="none" /></g>
+        <path d="M45 75 Q52 79 58 73" stroke-width="5" />
+      </svg>
+    </button>
+    <h1 class="hero-lead">
+      Business student at Zeppelin University. I care about making work processes simpler and better.
+      Currently working at Diehl Aviation on generative AI applications.
+    </h1>
+  </header>
+
+  <main>
+
+    <!-- Stationen: zweite Gruppe ist eine Kopie für die Endlosschleife -->
+    <div class="marquee" aria-label="Places I have worked and studied">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>Zeppelin University</span>
+          <span>Phoenix Living</span>
+          <span>Mercedes-Benz Sindelfingen Plant</span>
+          <span>ZU AI Club</span>
+          <span>Engel &amp; Völkers Vancouver</span>
+          <span>Custom Vancouver Carpentry</span>
+          <span>Project Landscape Calgary</span>
+          <span>Blue Estate</span>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span>Zeppelin University</span>
+          <span>Phoenix Living</span>
+          <span>Mercedes-Benz Sindelfingen Plant</span>
+          <span>ZU AI Club</span>
+          <span>Engel &amp; Völkers Vancouver</span>
+          <span>Custom Vancouver Carpentry</span>
+          <span>Project Landscape Calgary</span>
+          <span>Blue Estate</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <h2 class="section-title">Projects</h2>
+
+      <a class="card" href="projects/immovio.html">
+        <div class="card-body">
+          <div class="card-text">
+            <h3 class="card-title">Immovio: Finding new-build projects automatically</h3>
+            <p class="card-desc">
+              A crawler that collects new-build projects from property developers and presents them in a dashboard
+              with a map and an Excel export. Originally built for Phoenix Living.
+            </p>
+            <p class="card-skills">Python, web crawling, Flask dashboard, data preparation</p>
+            <div class="card-actions">
+              <span class="arrow-circle"><span class="icon">arrow_forward</span></span>
+              <span class="status-pill"><span class="icon">lock</span> Private code</span>
+            </div>
+          </div>
+          <div class="card-media">
+            <img src="images/immovio/dashboard-sm.webp" alt="Immovio dashboard on a laptop and phone" loading="lazy">
+          </div>
+        </div>
+      </a>
+
+      <a class="card" id="hackathon" href="projects/hackathon.html">
+        <div class="card-body">
+          <div class="card-text">
+            <h3 class="card-title">Organising Zeppelin University's first hackathon</h3>
+            <p class="card-desc">
+              Together with the ZU AI Club, I am organising the first hackathon at Zeppelin University: 24 hours,
+              around 110 participants, including sponsoring and catering.
+            </p>
+            <p class="card-skills">Event planning, sponsor outreach, team coordination</p>
+            <div class="card-actions">
+              <span class="arrow-circle"><span class="icon">arrow_forward</span></span>
+              <span class="status-pill"><span class="icon">event</span> February 2027</span>
+            </div>
+          </div>
+          <div class="card-media">
+            <div class="placeholder">Image coming soon</div>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="projects/humanoid-robots.html">
+        <div class="card-body">
+          <div class="card-text">
+            <h3 class="card-title">Humanoid robots in industry</h3>
+            <p class="card-desc">
+              Research project in a team of three on how humanoid robots change a company's legitimacy in the eyes
+              of its stakeholders. Eleven qualitative interviews, graded 1.0, the top German grade.
+            </p>
+            <p class="card-skills">Qualitative interviews, MAXQDA, academic research</p>
+            <div class="card-actions">
+              <span class="arrow-circle"><span class="icon">arrow_forward</span></span>
+            </div>
+          </div>
+          <div class="card-media">
+            <div class="placeholder">Image coming soon</div>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Other Projects</h2>
+      <div class="side-grid">
+
+        <a class="side-card">
+          <p class="tag">AI in the workplace</p>
+          <h3 class="card-title">Introducing Claude at Phoenix Living</h3>
+          <p>
+            Rolled out Claude across the company, from the first presentation to the team to making it part of
+            everyday workflows.
+          </p>
+          <div class="card-arrow">
+            <span class="arrow-circle"><span class="icon">arrow_forward</span></span>
+          </div>
+        </a>
+
+        <a class="side-card" href="https://github.com/lennardbrune" target="_blank" rel="noopener">
+          <p class="tag">Learning project</p>
+          <h3 class="card-title">Building a language model from scratch</h3>
+          <p>
+            Worked through Sebastian Raschka's “Build a Large Language Model (From Scratch)” cover to cover, from
+            attention to fine-tuning GPT-2 for spam detection (97% test accuracy) and following instructions.
+          </p>
+          <div class="card-arrow">
+            <span class="arrow-circle"><span class="icon">arrow_forward</span></span>
+          </div>
+        </a>
+
+        <a class="side-card">
+          <p class="tag">Research</p>
+          <h3 class="card-title">Comparing Chinese, American and European language models</h3>
+          <p>
+            An ongoing study that compares large language models from China with models from the US and Europe.
+          </p>
+          <div class="card-arrow">
+            <span class="arrow-circle"><span class="icon">arrow_forward</span></span>
+          </div>
+        </a>
+
+        <a class="side-card">
+          <p class="tag">Initiative</p>
+          <h3 class="card-title">ZU AI Club</h3>
+          <p>
+            Zeppelin University's student AI initiative. We organise talks and workshops with people from the
+            industry.
+          </p>
+          <div class="card-arrow">
+            <span class="arrow-circle"><span class="icon">arrow_forward</span></span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Education</h2>
+      <ul class="edu-list">
+        <li><span><b>Corporate Management &amp; Economics</b> (Bachelor's) at Zeppelin University
+            Friedrichshafen, since 2025</span></li>
+        <li><span><b>Gap year in Canada</b>, self-organised and self-funded, working in construction and as a
+            bartender, English at C1 level (IELTS)</span></li>
+        <li><span><b>Self-study:</b> learning how transformer models work by building my own</span></li>
+        <li><span><b>Abitur</b> (German university entrance qualification) with economics as an advanced
+            subject</span></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <section class="contact">
+    <p>Get in touch</p>
+    <p class="contact-mail">
+      <span class="mail" id="mail" data-mail="brunelennard06@gmail.com" tabindex="0" role="button"
+        aria-label="Copy email address">brunelennard06[at]gmail.com</span>
+    </p>
+    <p>Or find me on <a href="https://www.linkedin.com/in/lennard-brune-680875238/" target="_blank"
+        rel="noopener">LinkedIn</a></p>
+  </section>
+
+  <footer class="site-footer">
+    <span>© Lennard Brune, 2026</span>
+    <a href="impressum.html">Imprint</a>
+  </footer>
+
+  <div class="mail-tooltip" id="mail-tooltip" aria-live="polite">
+    <span class="icon">check</span>
+    <span class="tooltip-text">Click to copy</span>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="tinynet.js"></script>
+  <script src="water.js"></script>
+  <script src="chat.js"></script>
+</body>
+
+</html>

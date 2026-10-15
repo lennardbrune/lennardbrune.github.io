@@ -1,0 +1,13 @@
+# Nicht veröffentlichen
+CLAUDE.md
+.claude/
+*.docx
+~$*
+design/
+training/
+.DS_Store
+# Verworfen, wird nicht mehr geladen
+paint.js
+tinylm.js
+chat-data.js
+model/tinylm.*

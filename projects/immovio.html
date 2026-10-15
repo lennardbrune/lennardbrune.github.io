@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Immovio – Lennard Brune</title>
+  <meta name="description" content="Immovio: a crawler that collects new-build projects from property developers and prepares the data.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@900&family=Inter:wght@400;500;600;700;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward,check&display=block">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <nav class="project-nav" aria-label="Project navigation">
+    <a href="../index.html">← Home</a>
+    <span class="divider"></span>
+    <a href="hackathon.html">Next project →</a>
+  </nav>
+
+  <div class="project-hero">
+    <img src="../images/immovio/cover.webp" alt="Immovio on laptop, tablet and phone: project dashboard, map view and project details" fetchpriority="high">
+  </div>
+
+  <section class="project-intro">
+    <div class="project-intro-top">
+      <div class="project-heading">
+        <h1 class="project-title">Immovio: Finding new-build projects automatically</h1>
+        <p class="project-tagline">An AI-powered competitor monitor for residential developers: Immovio reads
+          developers’ own project pages and turns them into unit-level prices, availability and sales
+          progress.</p>
+      </div>
+      <dl class="project-meta">
+        <div>
+          <dt>Role</dt>
+          <dd>Concept and build, on my own</dd>
+        </div>
+        <div>
+          <dt>Origin</dt>
+          <dd>Grew out of my summer internship at Phoenix Living</dd>
+        </div>
+        <div>
+          <dt>Tools</dt>
+          <dd>Python, Flask, SQLite, Playwright, OpenAI API, Excel export</dd>
+        </div>
+      </dl>
+    </div>
+
+    <hr class="project-divider">
+
+    <div class="project-summary">
+      <div>
+        <h2>Problem</h2>
+        <p>
+          Anyone in new-build sales who wants to know what the competition is planning has to click through dozens
+          of property developer websites. Tracking prices, completion dates and new projects by hand takes a lot of
+          time, and changes often go unnoticed for too long.
+        </p>
+      </div>
+      <div>
+        <h2>Solution</h2>
+        <p>
+          Immovio searches developer websites automatically and uses AI to read out the project data, from the
+          specification down to the price of individual apartments. This brings the entire market analysis into
+          a single application and gives a clear overview of what is currently on offer in a city. Results can
+          be explored in a dashboard, on a map and in a detailed Excel export. Newly discovered competitors are
+          only added after manual approval.
+        </p>
+      </div>
+      <div>
+        <h2>Result</h2>
+        <p>
+          The database now covers more than 800 projects with over 3,000 individual apartments from more than
+          200 developers. Measured against an independent sample, the tool captures about two thirds of the
+          available information. Immovio is still in active development, and the biggest remaining gap is
+          apartment listings hidden in embedded widgets.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="gallery-row">
+      <figure>
+        <img src="../images/immovio/dashboard.webp" alt="Immovio dashboard with key figures and project cards" loading="lazy">
+        <figcaption>The dashboard shows every project found in a city, with prices, status and developer.
+        </figcaption>
+      </figure>
+    </div>
+    <div class="gallery-row">
+      <figure>
+        <img src="../images/immovio/map.webp" alt="Immovio map view with price pins on a tablet" loading="lazy">
+        <figcaption>The map places each project by location and filters out matches that lie outside the selected
+          city.</figcaption>
+      </figure>
+    </div>
+    <div class="gallery-row">
+      <figure>
+        <img src="../images/immovio/excel.webp" alt="Immovio Excel export with project table and charts" loading="lazy">
+        <figcaption>The Excel export brings projects, units and price histories together for further analysis.
+        </figcaption>
+      </figure>
+    </div>
+    <div class="gallery-row">
+      <figure>
+        <p class="gallery-note">All images show a redesigned interface with fictional sample data, not the live tool.</p>
+      </figure>
+    </div>
+
+    <!-- Noch ohne Funktion: Ziel (Formular oder mailto) folgt -->
+    <div class="cta-row">
+      <button type="button" class="pill-button">
+        Request access
+        <span class="icon" aria-hidden="true">arrow_forward</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="related">
+    <h2 class="section-title">Other Projects</h2>
+    <a href="hackathon.html">
+      <div class="placeholder">Image coming soon</div>
+      <p>Organising Zeppelin University's first hackathon</p>
+    </a>
+    <a href="humanoid-robots.html">
+      <div class="placeholder">Image coming soon</div>
+      <p>Humanoid robots in industry</p>
+    </a>
+  </section>
+
+  <section class="contact">
+    <p>Get in touch</p>
+    <p class="contact-mail">
+      <span class="mail" id="mail" data-mail="brunelennard06@gmail.com" tabindex="0" role="button"
+        aria-label="Copy email address">brunelennard06[at]gmail.com</span>
+    </p>
+    <p>Or find me on <a href="https://www.linkedin.com/in/lennard-brune-680875238/" target="_blank"
+        rel="noopener">LinkedIn</a></p>
+  </section>
+
+  <footer class="site-footer">
+    <span>© Lennard Brune, 2026</span>
+    <a href="../impressum.html">Imprint</a>
+  </footer>
+
+  <div class="mail-tooltip" id="mail-tooltip" aria-live="polite">
+    <span class="icon">check</span>
+    <span class="tooltip-text">Click to copy</span>
+  </div>
+
+  <script src="../main.js"></script>
+</body>
+
+</html>
