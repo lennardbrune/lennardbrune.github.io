@@ -6,10 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lennard Brune</title>
   <meta name="description" content="Lennard Brune – business student at Zeppelin University with a focus on processes, data and automation.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@900&family=Inter:wght@400;500;600;700;900&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward,check,event,lock&display=block">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -32,7 +28,7 @@
       </svg>
     </button>
     <h1 class="hero-lead">
-      Business student at Zeppelin University. I care about making work processes simpler and better.
+      <span class="hero-lead-intro">Business student at Zeppelin University.</span> I care about making work processes simpler and better.
       Currently working at Diehl Aviation on generative AI applications.
     </h1>
   </header>
@@ -43,6 +39,7 @@
     <div class="marquee" aria-label="Places I have worked and studied">
       <div class="marquee-track">
         <div class="marquee-group">
+          <span>Diehl Aviation</span>
           <span>Zeppelin University</span>
           <span>Phoenix Living</span>
           <span>Mercedes-Benz Sindelfingen Plant</span>
@@ -53,6 +50,7 @@
           <span>Blue Estate</span>
         </div>
         <div class="marquee-group" aria-hidden="true">
+          <span>Diehl Aviation</span>
           <span>Zeppelin University</span>
           <span>Phoenix Living</span>
           <span>Mercedes-Benz Sindelfingen Plant</span>
@@ -88,26 +86,6 @@
         </div>
       </a>
 
-      <a class="card" id="hackathon" href="projects/hackathon.html">
-        <div class="card-body">
-          <div class="card-text">
-            <h3 class="card-title">Organising Zeppelin University's first hackathon</h3>
-            <p class="card-desc">
-              Together with the ZU AI Club, I am organising the first hackathon at Zeppelin University: 24 hours,
-              around 110 participants, including sponsoring and catering.
-            </p>
-            <p class="card-skills">Event planning, sponsor outreach, team coordination</p>
-            <div class="card-actions">
-              <span class="arrow-circle"><span class="icon">arrow_forward</span></span>
-              <span class="status-pill"><span class="icon">event</span> February 2027</span>
-            </div>
-          </div>
-          <div class="card-media">
-            <div class="placeholder">Image coming soon</div>
-          </div>
-        </div>
-      </a>
-
       <a class="card" href="projects/humanoid-robots.html">
         <div class="card-body">
           <div class="card-text">
@@ -123,6 +101,26 @@
           </div>
           <div class="card-media">
             <div class="placeholder">Image coming soon</div>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="projects/nightlife.html">
+        <div class="card-body">
+          <div class="card-text">
+            <h3 class="card-title">Building a nightlife platform for bars and clubs</h3>
+            <p class="card-desc">
+              My own startup project: a platform that brings bars and clubs together with their guests. I developed
+              the business model and the product concept and directed the build of a working demo app.
+            </p>
+            <p class="card-skills">Business model, market research, product design, AI-assisted development</p>
+            <div class="card-actions">
+              <span class="arrow-circle"><span class="icon">arrow_forward</span></span>
+              <span class="status-pill"><span class="icon">lock</span> Not public yet</span>
+            </div>
+          </div>
+          <div class="card-media">
+            <div class="placeholder">Demo on request</div>
           </div>
         </div>
       </a>
@@ -156,11 +154,12 @@
           </div>
         </a>
 
-        <a class="side-card">
-          <p class="tag">Research</p>
-          <h3 class="card-title">Comparing Chinese, American and European language models</h3>
+        <a class="side-card" href="projects/hackathon.html">
+          <p class="tag">Event</p>
+          <h3 class="card-title">Zeppelin University's first hackathon</h3>
           <p>
-            An ongoing study that compares large language models from China with models from the US and Europe.
+            Organising the first hackathon at Zeppelin University with the ZU AI Club: 24 hours, around 110
+            participants, planned for February 2027.
           </p>
           <div class="card-arrow">
             <span class="arrow-circle"><span class="icon">arrow_forward</span></span>
@@ -184,15 +183,22 @@
 
     <section class="section">
       <h2 class="section-title">Education</h2>
-      <ul class="edu-list">
-        <li><span><b>Corporate Management &amp; Economics</b> (Bachelor's) at Zeppelin University
-            Friedrichshafen, since 2025</span></li>
-        <li><span><b>Gap year in Canada</b>, self-organised and self-funded, working in construction and as a
-            bartender, English at C1 level (IELTS)</span></li>
-        <li><span><b>Self-study:</b> learning how transformer models work by building my own</span></li>
-        <li><span><b>Abitur</b> (German university entrance qualification) with economics as an advanced
-            subject</span></li>
-      </ul>
+      <div class="edu">
+        <ul class="edu-list">
+          <li><span><b>Corporate Management &amp; Economics</b> (Bachelor's) at Zeppelin University
+              Friedrichshafen, since 2025</span></li>
+          <li><span><b>Gap year in Canada</b>, self-organised and self-funded, working in construction and as a
+              bartender, English at C1 level (IELTS)</span></li>
+          <li><span><b>Self-study:</b> learning how transformer models work by building my own</span></li>
+          <li><span><b>Abitur</b> (German university entrance qualification) with economics as an advanced
+              subject</span></li>
+        </ul>
+        <figure class="edu-portrait">
+          <img src="images/portrait.webp" srcset="images/portrait-sm.webp 337w, images/portrait.webp 674w"
+            sizes="(min-width: 1960px) 420px, (min-width: 1081px) 340px, 280px" width="674" height="842" alt="Portrait of Lennard Brune"
+            loading="lazy">
+        </figure>
+      </div>
     </section>
 
   </main>
@@ -210,6 +216,7 @@
   <footer class="site-footer">
     <span>© Lennard Brune, 2026</span>
     <a href="impressum.html">Imprint</a>
+    <a href="datenschutz.html">Privacy</a>
   </footer>
 
   <div class="mail-tooltip" id="mail-tooltip" aria-live="polite">

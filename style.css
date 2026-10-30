@@ -4,6 +4,53 @@
    1080px (eine Spalte darunter), 480px (Smartphone).
    ========================================================================== */
 
+/* ---------- Schriften (lokal, keine Verbindung zu Google) ---------- */
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(fonts/inter-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(fonts/inter-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(fonts/archivo-900-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(fonts/archivo-900-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Nur die Icons arrow_forward, check, event, lock. Neue Icons: Teilmenge neu laden. */
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(fonts/material-symbols-subset.woff2) format('woff2');
+}
+
 *,
 *::before,
 *::after {
@@ -149,6 +196,11 @@ img {
   line-height: 1.2;
   font-weight: 500;
   color: var(--text);
+}
+
+/* Erster Satz steht immer allein in der ersten Zeile */
+.hero-lead-intro {
+  display: block;
 }
 
 .hero-mark {
@@ -729,8 +781,7 @@ html.chat-open {
   .card-text {
     grid-template-columns: minmax(240px, 680px) minmax(150px, 360px);
     column-gap: 156px;
-  }
-}
+  }}
 
 /* ---------- Weitere Projekte ---------- */
 
@@ -758,9 +809,27 @@ html.chat-open {
 
 /* ---------- Ausbildung ---------- */
 
+/* Education: Liste und Foto im selben Raster wie die Projektkarten (Foto beginnt auf der Bildkante) */
+.edu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .edu-list {
   list-style: none;
   max-width: 900px;
+}
+
+.edu-portrait {
+  max-width: 280px;
+}
+
+.edu-portrait img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: var(--accent-tint);
 }
 
 .edu-list li {
@@ -778,6 +847,35 @@ html.chat-open {
   margin: 7px 6px 0;
   border-radius: 50%;
   border: 2px solid var(--accent);
+}
+
+@media (min-width: 1081px) {
+  .edu {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 48px;
+  }
+
+  .edu-list {
+    flex: 0 0 646px;  /* = Breite .card-text (380 + 56 + 210) */
+  }
+
+  .edu-portrait {
+    flex: none;
+    width: 340px;
+    max-width: none;
+  }
+}
+
+@media (min-width: 1960px) {
+  .edu-list {
+    flex-basis: 1196px;  /* = Breite .card-text (680 + 156 + 360) */
+    max-width: none;
+  }
+
+  .edu-portrait {
+    width: 420px;
+  }
 }
 
 /* ---------- Kontakt und Footer ---------- */
