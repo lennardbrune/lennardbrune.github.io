@@ -504,6 +504,50 @@
       ]
     },
     {
+      "id": "nightlife",
+      "mood": "happy",
+      "keys": [
+        "startup",
+        "nightlife",
+        "bars",
+        "bar",
+        "clubs",
+        "club",
+        "platform",
+        "founder",
+        "venture",
+        "going out",
+        "demo"
+      ],
+      "text": "Lennard is working on his own startup project: a platform that brings bars and clubs together with their guests. He developed the business model and the product concept and directed an AI coding agent that built a working demo app. A pilot is planned for 2027. The details are not public yet, but he is happy to show the demo in person.",
+      "questions": [
+        "what is the nightlife platform?",
+        "tell me about his startup",
+        "does lennard have a startup?",
+        "what is his startup about?",
+        "what is the nightlife project?",
+        "tell me about the bars and clubs platform",
+        "is he building an app?",
+        "what app is he building?",
+        "is he a founder?",
+        "what is his own business idea?",
+        "does he have his own company?",
+        "tell me about the nightlife app",
+        "what does the platform do?",
+        "how does the nightlife platform work?",
+        "who is it for?",
+        "is the startup public?",
+        "can i see the demo?",
+        "when does the startup launch?",
+        "startup?",
+        "nightlife?",
+        "what is he founding?",
+        "does he work on a side project for bars?",
+        "what is his entrepreneurial project?",
+        "tell me about the demo app"
+      ]
+    },
+    {
       "id": "model_study",
       "mood": "thinking",
       "keys": [
